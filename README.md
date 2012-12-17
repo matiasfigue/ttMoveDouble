@@ -3,6 +3,8 @@ How to make it work:
 
 ### What it looks like (when it works), and why I made something so similar to my last one.
 <a href="https://vimeo.com/55731022">https://vimeo.com/55731022</a>
+
+
 Basically, this is the same thing as <a href="https://github.com/scottsullivan/ttMove">ttMove</a> except it has two sensors instead of one.
 I did this to get farmiliar with using functions, which I explain in the video. They're awesome!
 
