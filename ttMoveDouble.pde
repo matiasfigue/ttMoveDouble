@@ -29,24 +29,24 @@ void draw() {
   if ((moveActive != moveLastState) && (moveActive == 1)) {
     moveCount++;
 
-    updateCounterDrawing(moveCount, 0, 150, 30);
+    updateCounterDrawing(moveCount, 0);
   }
 
   if ((moveActiveB != moveLastStateB) && (moveActiveB == 1)) {
     moveCountB++;
 
-    updateCounterDrawing(moveCountB, 300, 450, 330);
+    updateCounterDrawing(moveCountB, 300);
   }
 
   moveLastState = moveActive;
   moveLastStateB = moveActiveB;
 }
 
-void updateCounterDrawing(int countTotal, int rectX, int circleX, int textX) {
+void updateCounterDrawing(int countTotal, int xPosition) {
   fill(255, 255, 255); 
-  rect(rectX, 0, 300, 300);
+  rect(xPosition, 0, 300, 300);
   fill(#FF8664);
-  ellipse(circleX, 150, (countTotal*5), (countTotal*5)); 
-  text(countTotal, textX, 270);
+  ellipse((xPosition + 150), 150, (countTotal*5), (countTotal*5)); 
+  text(countTotal, xPosition + 30, 270);
 }
 
